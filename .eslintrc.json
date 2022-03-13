@@ -26,21 +26,18 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "quotes": [
-      "error",
-      "double",
+    "prettier/prettier": [
+      0,
       {
-        "avoidEscape": true
+        "endOfLine": "auto"
+      },
+      {
+        "usePrettierrc": false
       }
     ],
-    "@typescript-eslint/quotes": [
-      "error",
-      "double",
-      {
-        "avoidEscape": true,
-        "allowTemplateLiterals": true
-      }
-    ],
+    "quotes": "off",
+    "react/no-unescaped-entities": 0,
+    "@typescript-eslint/quotes": ["error"],
     "react/jsx-uses-react": ["off"],
     "react/react-in-jsx-scope": ["off"],
     "react/jsx-props-no-spreading": ["off"],
